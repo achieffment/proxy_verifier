@@ -37,7 +37,7 @@ class ProxyChecker extends Proxy {
         if ($proxy !== false) {
             $proxyCount = $this->getDeathProxyCountByDeathProxy($proxy);
             if ($proxyCount !== false) {
-                if ($proxyCount > 3) {
+                if ($proxyCount > 2) {
                     if ($this->remove($proxy, 0))
                         if ($this->remove($proxy, 1))
                             if ($this->addTotallyDeath($proxy))

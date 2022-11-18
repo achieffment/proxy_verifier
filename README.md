@@ -1,0 +1,6 @@
+<h1>Proxy verifier bot</h1>
+<p>We have a list of proxy (main list). Sometimes a few of proxies can stop working. We must send request to remove this proxy from main list. But we want to give a chance to this proxy. We add this proxy in proxy dead list and check. If we met this proxy more than 3 times. We delete this proxy from main list and dead list. And put this proxy in totally dead list.</p>
+<p>So if we met proxy on 4th time, we not trying to use this proxy anymore and remove this proxy from main list. And after we can watch them in db.</p>
+<p>System has proxy validating and the page with get requests logic. Get requests can be found in index page. Description of methods and classes you can find in /classes/. Also, we have a form to add proxy in main list (/pages/addlist_proxy.php), we can call it by sending get request "addlist_proxy".</p>
+<p>To create db you can use script /init/db_create.php (don't forget to change connect parameters)</p>
+<p>To use this system change parameters in db_init.php (db connection).</p>
